@@ -1,0 +1,19 @@
+#D2_skill_calculator {
+  margin: 0 auto;
+  width: 800px;
+  padding: 1em 2em;
+}
+
+#D2_skill_calculator .skilltree,
+#D2_skill_calculator .skilltree map {
+  position: relative;
+}
+
+#D2_skill_calculator .skilltree input {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}

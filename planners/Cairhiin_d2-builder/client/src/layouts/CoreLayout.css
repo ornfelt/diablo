@@ -1,0 +1,13 @@
+#coreLayout {
+  background-color: black;
+  background-image: url('../images/D2-Resurrected.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 1200px;
+}
+
+#footer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

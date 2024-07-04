@@ -1,0 +1,534 @@
+{
+  "allSkills": { 
+    "name": "allSkills",
+    "descr": "+{a} To All Skills",
+    "shortDescr": "All Skills",
+    "inputMin": 1,
+    "inputMax": 50,
+    "step": 1
+  },
+  "classSkills": { 
+    "name": "classSkills",
+    "descr": "+{a} To {class} Skill Levels",
+    "shortDescr": "Class Skill Levels",
+    "inputMin": 1,
+    "inputMax": 50,
+    "step": 1
+  },
+  "treeSkills": { 
+    "name": "treeSkills",
+    "descr": "+{a} To {tree} ({class} Only)",
+    "shortDescr": "Tree Skills",
+    "inputMin": 1,
+    "inputMax": 50,
+    "step": 1
+  },
+  "singleSkill": { 
+    "name": "singleSkill",
+    "descr": "+{a} To {skill} ({class} Only)",
+    "shortDescr": "Single Skill",
+    "inputMin": 1,
+    "inputMax": 50,
+    "step": 1
+  },
+
+  "allAttrs": { 
+    "name": "allAttrs",
+    "descr": "+{a} To All Attributes",
+    "shortDescr": "All Attributes",
+    "inputMin": 1,
+    "inputMax": 250,
+    "step": 1
+  },
+  "strength": { 
+    "name": "strength",
+    "descr": "+{a} To Strength",
+    "shortDescr": "Strength",
+    "inputMin": 1,
+    "inputMax": 250,
+    "step": 1
+  },
+  "strength/lvl": { 
+    "name": "strength/lvl",
+    "descr": "+{a} To Strength ({b}/lvl)",
+    "shortDescr": "Strength / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "dexterity": { 
+    "name": "dexterity",
+    "descr": "+{a} To Dexterity",
+    "shortDescr": "Dexterity",
+    "inputMin": 1,
+    "inputMax": 250,
+    "step": 1
+  },
+  "dexterity/lvl": { 
+    "name": "dexterity/lvl",
+    "descr": "+{a} To Dexterity ({b}/lvl)",
+    "shortDescr": "Dexterity / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "vitality": { 
+    "name": "vitality",
+    "descr": "+{a} To Vitality",
+    "shortDescr": "Vitality",
+    "inputMin": 1,
+    "inputMax": 250,
+    "step": 1
+  },
+  "vitality/lvl": { 
+    "name": "vitality/lvl",
+    "descr": "+{a} To Vitality ({b}/lvl)",
+    "shortDescr": "Vitality / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "energy": { 
+    "name": "energy",
+    "descr": "+{a} To Energy",
+    "shortDescr": "Energy",
+    "inputMin": 1,
+    "inputMax": 250,
+    "step": 1
+  },
+  "life": { 
+    "name": "life",
+    "descr": "+{a} To Life",
+    "shortDescr": "Life",
+    "inputMin": 1,
+    "inputMax": 250,
+    "step": 1
+  },
+  "life/lvl": { 
+    "name": "life/lvl",
+    "descr": "+{a} To Life ({b}/lvl)",
+    "shortDescr": "Life / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "mana": { 
+    "name": "mana",
+    "descr": "+{a} To Mana",
+    "shortDescr": "Mana",
+    "inputMin": 1,
+    "inputMax": 250,
+    "step": 1
+  },
+  "mana/lvl": { 
+    "name": "mana/lvl",
+    "descr": "+{a} To Mana ({b}/lvl)",
+    "shortDescr": "Mana / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+
+  "dmg": { 
+    "name": "dmg",
+    "descr": "Damage +{a}",
+    "shortDescr": "Damage",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "dmg%": { 
+    "name": "dmg%",
+    "descr": "+{a}% Enhanced Damage",
+    "shortDescr": "Enhanced Damage",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "minDmg": { 
+    "name": "minDmg",
+    "descr": "+{a} To Minimum Damage",
+    "shortDescr": "Minimum Damage",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "maxDmg": { 
+    "name": "maxDmg",
+    "descr": "+{a} To Maximum Damage",
+    "shortDescr": "Maximum Damage",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "maxDmg/lvl": { 
+    "name": "maxDmg/lvl",
+    "descr": "+{a} To Maximum Damage ({b}/lvl)",
+    "shortDescr": "Maximum Damage / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "eMaxDmg/lvl": { 
+    "name": "eMaxDmg/lvl",
+    "descr": "+{a}% Enhanced Maximum Damage ({b}/lvl)",
+    "shortDescr": "Enhanced Maximum Damage / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "dmgDemon": { 
+    "name": "dmgDemon",
+    "descr": "+{a}% Damage To Demons",
+    "shortDescr": "Damage To Demons",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "dmgDemon/lvl": { 
+    "name": "dmgDemon/lvl",
+    "descr": "+{a}% Damage To Demons ({b}/lvl)",
+    "shortDescr": "Damage To Demons / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "dmgUndead": { 
+    "name": "dmgUndead",
+    "descr": "+{a}% Damage To Undead",
+    "shortDescr": "Damage To Undead",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "dmgUndead/lvl": { 
+    "name": "dmgUndead/lvl",
+    "descr": "+{a}% Damage To Undead ({b}/lvl)",
+    "shortDescr": "Damage To Undead / lvl",
+    "inputMin": 0.25,
+    "inputMax": 10,
+    "step": 0.025
+  },
+  "fireDmg": { 
+    "name": "fireDmg",
+    "descr": "Adds {a}-{b} Fire Damage",
+    "shortDescr": "Fire Damage",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "coldDmg": { 
+    "name": "coldDmg",
+    "descr": "Adds {a}-{b} Cold Damage",
+    "shortDescr": "Cold Damage",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "ltngDmg": { 
+    "name": "ltngDmg",
+    "descr": "Adds {a}-{b} Lightning Damage",
+    "shortDescr": "Lightning Damage",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "poisDmg": { 
+    "name": "poisDmg",
+    "descr": "+{a} Poison Damage Over Seconds",
+    "shortDescr": "Poison Damage",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+ 
+  "def": { 
+    "name": "def",
+    "descr": "+{a} Defense",
+    "shortDescr": "Defense",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "def%": { 
+    "name": "def%",
+    "descr": "+{a}% Enhanced Defense",
+    "shortDescr": "Enhanced Defense",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "def/lvl": { 
+    "name": "def/lvl",
+    "descr": "+{a} Defense ({b}/lvl)",
+    "shortDescr": "Defense / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "dmgRed": { 
+    "name": "dmgRed",
+    "descr": "Damage Reduced By {a}",
+    "shortDescr": "Damage Reduction",
+    "inputMin": 1,
+    "inputMax": 50,
+    "step": 1
+  },
+  "dmgRed%": { 
+    "name": "dmgRed%",
+    "descr": "Damage Reduced By {a}%",
+    "shortDescr": "Damage Reduction %",
+    "inputMin": 1,
+    "inputMax": 50,
+    "step": 1
+  },
+  "block": { 
+    "name": "block",
+    "descr": "{a}% Increased Chance Of Blocking",
+    "shortDescr": "Block",
+    "inputMin": 1,
+    "inputMax": 55,
+    "step": 1
+  },
+  "fhr": { 
+    "name": "fhr",
+    "descr": "+{a}% Fast Hit Recovery",
+    "shortDescr": "Fast Hit Recovery",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+
+  "mf": { 
+    "name": "mf",
+    "descr": "+{a}% Better Chance Of Getting Magic Items",
+    "shortDescr": "Magic Find",
+    "inputMin": 1,
+    "inputMax": 9999,
+    "step": 1
+  },
+  "mf/lvl": { 
+    "name": "mf/lvl",
+    "descr": "+{a}% Better Chance Of Getting Magic Items ({b}/lvl)",
+    "shortDescr": "Magic Find / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "req": { 
+    "name": "req",
+    "descr": "Requirements -{a}%",
+    "shortDescr": "Requirements",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+ 
+  "fcr": { 
+    "name": "fcr",
+    "descr": "+{a}% Faster Cast Rate",
+    "shortDescr": "Faster Cast Rate",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "frw": { 
+    "name": "frw",
+    "descr": "+{a}% Faster Run/Walk",
+    "shortDescr": "Faster Run/Walk",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "ar": { 
+    "name": "ar",
+    "descr": "+{a} Attack Rating",
+    "shortDescr": "Attack Rating",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "eAr": { 
+    "name": "eAr",
+    "descr": "{a}% Bonus To Attack Rating",
+    "shortDescr": "Bonus To Attack Rating",
+    "inputMin": 1,
+    "inputMax": 999,
+    "step": 1
+  },
+  "ar/lvl": { 
+    "name": "ar/lvl",
+    "descr": "+{a} Attack Rating ({b}/lvl)",
+    "shortDescr": "Attack Rating / lvl",
+    "inputMin": 0.25,
+    "inputMax": 15,
+    "step": 0.025
+  },
+  "ias": { 
+    "name": "ias",
+    "descr": "+{a}% Increased Attack Speed",
+    "shortDescr": "Increased Attack Speed",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "ow": { 
+    "name": "ow",
+    "descr": "{a}% Chance Of Open Wounds",
+    "shortDescr": "Open Wounds",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "cb": { 
+    "name": "cb",
+    "descr": "{a}% Chance Of Crushing Blow",
+    "shortDescr": "Crushing Blow",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "ds": { 
+    "name": "ds",
+    "descr": "{a}% Deadly Strike",
+    "shortDescr": "Deadly Strike",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "ds/lvl": { 
+    "name": "ds/lvl",
+    "descr": "{a}% Deadly Strike ({b}/lvl)",
+    "shortDescr": "Deadly Strike / lvl",
+    "inputMin": 0.25,
+    "inputMax": 5,
+    "step": 0.025
+  },
+  "lifeSteal": { 
+    "name": "lifeSteal",
+    "descr": "{a}% Life Stolen Per Hit",
+    "shortDescr": "Life Stolen",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "manaSteal": { 
+    "name": "manaSteal",
+    "descr": "{a}% Mana Stolen Per Hit",
+    "shortDescr": "Mana Stolen",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+
+  "allRes": { 
+    "name": "allRes",
+    "descr": "All Resistances +{a}%",
+    "shortDescr": "All Resistances",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "fireRes": { 
+    "name": "fireRes",
+    "descr": "Fire Resist +{a}%",
+    "shortDescr": "Fire Resist",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "coldRes": { 
+    "name": "coldRes",
+    "descr": "Cold Resist +{a}%",
+    "shortDescr": "Cold Resist",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "ltngRes": { 
+    "name": "ltngRes",
+    "descr": "Lightning Resist +{a}%",
+    "shortDescr": "Lightning Resist",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "poisRes": { 
+    "name": "poisRes",
+    "descr": "Poison Resist +{a}%",
+    "shortDescr": "Poison Resist",
+    "inputMin": 1,
+    "inputMax": 100,
+    "step": 1
+  },
+  "maxFireRes": { 
+    "name": "maxFireRes",
+    "descr": "+{a}% To Maximum Fire Resist",
+    "shortDescr": "Maximum Fire Resist",
+    "inputMin": 1,
+    "inputMax": 25,
+    "step": 1
+  },
+  "maxColdRex": { 
+    "name": "maxColdRex",
+    "descr": "+{a}% To Maximum Cold Resist",
+    "shortDescr": "Maximum Cold Resist",
+    "inputMin": 1,
+    "inputMax": 25,
+    "step": 1
+  },
+  "maxLtngRes": { 
+    "name": "maxLtngRes",
+    "descr": "+{a}% To Maximum Lightning Resist",
+    "shortDescr": "Maximum Lightning Resist",
+    "inputMin": 1,
+    "inputMax": 25,
+    "step": 1
+  },
+  "maxPoisRes": { 
+    "name": "maxPoisRes",
+    "descr": "+{a}% To Maximum Poison Resist",
+    "shortDescr": "Maximum Poison Resist",
+    "inputMin": 1,
+    "inputMax": 25,
+    "step": 1
+  },
+
+  "ethereal": { 
+    "name": "ethereal",
+    "descr": "Ethereal (Cannot Be Repaired)",
+    "shortDescr": "Ethereal"
+  },
+  "noHeal": { 
+    "name": "noHeal",
+    "descr": "Prevent Monster Heal"
+  },
+  "ignoreDef": { 
+    "name": "ignoreDef",
+    "descr": "Ignore Target`s Defense"
+  },
+  "knockback": { 
+    "name": "knockback",
+    "descr": "Knockback"
+  },
+  "hitBlinds": { 
+    "name": "hitBlinds",
+    "descr": "Hit Blinds Target"
+  },
+  "indestruct": { 
+    "name": "indestruct",
+    "descr": "Indestructible"
+  },
+  "noFreeze": { 
+    "name": "noFreeze",
+    "descr": "Cannot Be Frozen"
+  },
+  "halfFreeze": { 
+    "name": "halfFreeze",
+    "descr": "Half Freeze Duration"
+  },
+  "rip": { 
+    "name": "rip",
+    "descr": "Slain Monsters Rest In Peace"
+  }
+}

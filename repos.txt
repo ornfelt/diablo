@@ -1,0 +1,19 @@
+# diasurgical
+https://github.com/diasurgical/libmpq
+https://github.com/diasurgical/modding-tools
+https://github.com/diasurgical/devilutionx-mpq-tools
+https://github.com/diasurgical/devilutionx-graphics-tools
+https://github.com/diasurgical/devilutionx-gamelist
+
+# planners
+https://maxroll.gg/d2
+https://d2planner.github.io/skills/?eyJ2IjoxLCJwIjoiMS4xNEQiLCJjIjoic29yY2VyZXNzIiwicyI6e30sImIiOnt9LCJ0IjoxfQ==
+https://github.com/d2planner/skills
+https://github.com/BetweenWalls/portal
+https://github.com/Moreina/planner
+https://github.com/omm7813/diablo_nav2_simulation
+https://github.com/Nostrademous/Diablo-3-Battle-Simulation
+https://github.com/Kuukuna93/d2-planner
+https://github.com/Cairhiin/d2-builder
+https://github.com/ReDuzed/D2-Character-Planner
+https://github.com/eduardocmoreno/d2planner

@@ -1,0 +1,39 @@
+.characterSelectorContainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+
+.characterButton {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0.1rem .3rem;
+  margin: 0px 2px;
+  color: #404040;
+  font-weight: normal;
+}
+
+.characterButton:hover, .characterButton:active, .characterButton:focus {
+  text-decoration: underline;
+  background-color: transparent;
+  border-color: transparent;
+  color: #404040;
+}
+
+.selectedCharacterButton {
+  background-color: transparent;
+  border-color: #404040;
+  padding: 0.1rem .3rem;
+  margin: 0px;
+  color: #404040;
+  font-weight: 600;
+}
+
+.selectedCharacterButton:hover, .selectedCharacterButton:active, .selectedCharacterButton:focus {
+  background-color: transparent;
+  border-color: #404040;
+  color: #404040;  
+}

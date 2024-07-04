@@ -1,0 +1,44 @@
+div.difficultySelector {
+  display:  flex;
+  margin:  0;
+  justify-content: center;
+  width:  300px;
+}
+
+button.difficulty, button.difficulty:focus, button.auto, button.auto:focus {
+  display: flex;
+  background-color: transparent;
+  border-color: transparent;
+  height: fit-content;
+  border-width: 2px;
+  outline: none;
+  padding: 2px;
+  margin: 0px 2px;
+}
+
+button.difficulty:hover, button.difficulty:active, button.auto:hover, button.auto:active {
+  border-color: #404040;
+}
+
+button.difficultySelected, button.difficultySelected:focus, button.autoSelected, button.autoSelected:focus {
+  border-color: #404040;
+}
+
+button.autoSelected:hover, button.autoSelected:active {
+  background-color: #E3EBF2;
+}
+
+button.difficultyAutoSelected, button.difficultyAutoSelected:focus {
+  border-color: #404040;
+  border-style: dashed;
+}
+
+button.difficultyAutoSelected:hover, button.difficultyAutoSelected:active {
+  border-style: solid;
+}
+
+
+img.difficulty, img.auto {
+  height: 36px;
+  margin: 0px;
+}

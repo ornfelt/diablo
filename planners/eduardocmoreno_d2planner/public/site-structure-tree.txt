@@ -1,0 +1,469 @@
+CHARACTER CLASS SPECIFIC DATA =========================
+    -> SKILLS
+    -> INITIAL STAT POINTS
+    -> ITEMS (*PALY SHIELDS, BARB HELMS, DRUID PELTS, *NECRO HEADS, *SORC ORBS, *AMAZON WEAPONS, *ASSASSIN KATARS)
+
+
+CHARACTER CLASS SHARED DATA ===========================
+    -> SKILLS (OSKILLS, PALY AURAS)
+
+    *** OSKILLS, AURAS PRIORITY LAWS, ETC: https://diablo2.diablowiki.net/Item_Skill_Bonuses
+
+
+
+    *** MORE CONTENTS: http://www.d2tomb.com/skills.shtml
+
+
+
+CHARACTER SETUP =======================================
+
+==> LEVEL (INPUT - NUMBER)
+
+==> STATS
+    -> STRENGTH (INPUT - NUMBER)(FOR DAMAGE MEANING CALC)
+    -> DEXTERITY (INPUT - NUMBER)(FOR CTH AND CTB CALC)
+
+==> SKILL QUESTS SELECTION (CHECKBOX - BOOLEAN)
+
+==> SKILL POINTS REMAINING COUNT (RETURN - NUMBER)
+
+
+
+
+SKILL TREE ============================================
+
+==> TAB SKILLS
+
+==> EXTRA SKILL POINTS
+    -> ADD EXTRA SKILL FORM
+       PROVIDER (INPUT - STRING) ---> SKILL TYPE (SEL - NUMBER [ID]) ---> QTY (SEL - NUMBER - MAX +3)
+  eg.: HEMET: +1 TO ALL CHAR SKILLS
+  eg.: AMULET: +3 TO TAB SKILLS
+  eg.: COMPLETE SET: +2 TO ALL SKILLS
+  eg.: BATCH OF EVERITHING: +2 TO ALL SKILLS
+
+==> SIDE PANEL INFOS
+    -> SKILL POINTS REMAINING
+    -> RESET BTN
+    -> SKILL INFO (ON-MOUSE-HOVER - OBJ)
+
+
+
+GEAR ========================================================
+
+==> GEAR
+    -> WEAPON (SEL - OBJ - [MAX/MIN DMG, SPEED, STR/DEX REQ?])(DMG, IAS)
+    -> SHIELD (SEL - OBJ - [MIN/MAX SMITE DMG, CTB, STR REQ])(DMG, CTB)
+
+==> BONUSES
+    ADD BONUS FORM (i - POP-UP WITH MORE INFO?)
+    BONUS TYPE (SEL - OBJ) ---> AMOUNT (INPUT - NUMBER)
+    ** BONUS TYPES:
+    - ALL PROPS
+      - SKILLS
+        - TO ALL SKILLS
+        - TO ALL CLASS SKILLS
+        - TO ALL TREE SKILLS (SELECT - ARRAY[TREE SKILLS])
+        - TO EACH CLASS SKILL (SELECT - ARRAY[ALL CLASS SKILLS])
+        ?? TO FIRE SKILLS (MAST ADD "ETYPE" PROP FOR MAL ELEMENTAL SKILLS)
+        ?? TO NON-CLASS SKILLS
+      
+      - ATTRIBUTES
+        - TO ALL ATTRS
+        - TO STRENGTH
+        - TO STRENGTH BOCL
+        - TO DEXTERITY
+        - TO DEXTERITY BOCL
+        - TO VITALITY
+        - TO VITALITY BOCL
+        - TO ENERGY
+        - TO ENERGY BOCL
+        - TO LIFE
+        - TO LIFE BOCL
+        - TO MANA
+        - TO MANA BOCL
+        ?? INCR MAX LIFE
+        ?? INCR MAX MANA
+      
+      - DEFENSE
+        - DEFENSE +XXX
+        - DEFENSE BOCL
+        - ENHANCED DEFENSE XXX%
+        - DAMAGE REDUCTION %
+        - BLOCK CHANCE
+        - FHR
+        - DAMAGE REDUCTION
+        ?? FBR
+        ?? MAGIC DAMAGE REDUCTION
+        ?? FIRE ABSORB
+        ?? FIRE ABSORB %
+        ?? FIRE ABSORB BOCL
+        ?? COLD ABSORB
+        ?? COLD ABSORB %
+        ?? LIGHTNING ABSORB
+        ?? LIGHTNING ABSORB %
+        ?? MAGIC ABSORB
+        ?? MAGIC ABSORB %
+      
+      - RESISTS
+        - ALL RES
+        - FIRE RES
+        - COLD RES
+        - LIGHTNING RES
+        - POISON RES
+        - MAX FIRE RES
+        - MAX COLD RES
+        - MAX LIGHTNING RES
+        - MAX POISON RES 
+      
+      - DAMAGE
+        - DAMAGE +XXX
+        - ENHANCED DAMAGE XXX%
+        - MAX DAMAGE
+        - MIN DAMAGE
+        - FIRE DAMAGE
+        - FIRE DAMAGE %
+        - COLD DAMAGE
+        - COLD DAMAGE %
+        - LIGHTNING DAMAGE
+        - LIGHTNING DAMAGE %
+        - POISON DAMAGE
+        - POISON DAMAGE %
+        - MAGIC DAMAGE
+        - DMG VS DEMONS
+        - DMG VS DEMONS BOCL
+        - DMG VS UNDEAD
+        - DMG VS UNDEAD BOCL
+        ?? TO FIRE SKILL DMG %
+        ?? TO COLD SKILL DMG %
+        ?? TO LIGHTNING SKILL DMG %
+        ?? TO POISON SKILL DMG %
+      
+      - OFFENSES
+        - AR
+        - AR BOCL
+        - AR %
+        - AR % BOCL
+        - IAS
+        - OW
+        - CB
+        - DS
+        - DS BOCL
+        - FCR
+        - FRW
+        - LIFE STOLEN PER HIT
+        - MANA STOLEN PER HIT
+        ?? AR VS DEMONS
+        ?? AR VS DEMONS BOCL
+        ?? AR VS UNDEAD
+        ?? AR VS UNDEAD BOCL
+        ?? ENEMY FIRE RES
+        ?? ENEMY COLD RES
+        ?? ENEMY LIGHTNING RES
+        ?? ENEMY POISON RES
+        ?? IGORE ENEMY DEFENSE %
+      
+      - MISC
+        - MF
+        - MF BOCL
+        - REQUIREMENTS
+        - ETHEREAL
+        - INDESTRUCTIBLE
+        - CANNOT BE FROZEN
+        - PREVENT MONSTER HEAL
+        - IGNORE TARGET`S DEFENSE
+        - KNOCKBACK
+        - HIT BLINDS TARGET
+
+    - LIST OF NON-CLASS SKILLS
+      //SKILL NAME (MAX LEVEL)(CHARACTER)
+      - WEREWOLF (3-6)(DRUID)(1)
+      - LYCANTHROPY (3-6)(DRUID)(2)
+      - WEREBEAR (3)(DRUID)(3)
+      - ARTIC BLAST (7-14)(DRUID)
+      - FERAL RAGE (3-6)(DRUID)
+      
+      - BATTLE COMMAND (2-6)(BARB)
+      - BATTLE ORDERS (1-6)(BARB)
+      - BATTLE CRY (1-4)(BARB)
+      - WHIRLWIND (1)(BARB)
+      - BERSERK (1)(BARB)
+
+      - VALKYRIE (2-6)(AMAZON)
+      - CRITICAL STRIKE (1-6)(AMAZON)
+      - GUIDED ARROW (3-5)(AMAZON)
+
+      - VENGEANCE (1)(PALY)
+      - ZEAL (1)(PALY)
+      
+      - TELEPORT (1)(SORC)
+      - WARMTH (1)(SORC)
+      - HYDRA (10)(SORC)
+      - INFERNO (12-18)(SORC)
+      
+
+    - CAST SKILLS CHANCES
+      - LIFE TAP
+      - VENOM
+      - ENCHANT
+    
+    - CAST SKILLS CHARGES
+      - VENOM
+      - ENCHANT
+      - HEART OF WOLVERINE
+      - OAK SAGE
+    
+    - AURAS
+      - FANATICISM
+      - HOLY FREEZE
+      - HOLY FIRE
+      - HOLY SHOCK
+      - MIGHT
+      - CONCENTRATION
+
+    - STATS PER CHAR LVL (consult at itemStatCost)
+      --> 1H DEFAULT FORMULA: LEVEL / 4 * 3 (0.75 ON LVL 1)
+      --> 1H WITH COSTMULT: LEVEL / 4 * 3 * COSTMULT (costmult = keyof item)
+      --> 2H + COSTMULT EX.: LEVEL / 4 * COSTMULT * 2
+          ex. The Grandfather (costmult: 5)
+              LEVEL (50) / 4 * 5 * 2 = 125
+      
+    eg.: DAMAGE: +396
+    eg.: OFF-WEAPON ED%: 132%
+    eg.: TOTAL IAS%: 75%
+
+
+
+RESULTS =========================================
+
+==> PRIMARY ATTACK, SECONDARY ATTACK/AURA AND EXTRA AURAS SELECTION
+    -> PRIMARY ATTACK BOX (CUSTOM SEL - OBJ)
+    -> SECONDARY ATTACK/AURA BOX (CUSTOM SEL - OBJ)
+    -> ADD EXTRA AURAS FORM (i - POP-UP WITH MORE INFO?)
+       PROVIDER (INPUT - STRING) ---> AURA (SEL - OBJ [ID, SYNERGIES]) ---> LVL (INPUT - NUMBER)
+  eg.: WEAPON: FANATICISM LVL 9
+  eg.: MERC: BLESSED AIM LVL 9
+
+       *** MERC CALC SITES --> http://www.mannm.org/d2library/faqtoids/hire_tabs.html
+                               https://www.diabloii.net/forums/threads/ultimate-merc-guide-v3-0.306061/
+       *** MERC AURAS FORMULA --> ??? 7 + [(hlvl - 43) × 8 / 32] ??? NEEDS TO VALIDATE
+
+==> DAMAGE
+    -> PRIMARY ATTACK DMG (RETURN - OBJ)
+  eg.: ZEAL DAMAGE: 200-800
+       PHYSICAL: 199-300
+       LIGHTNING: 1-500
+
+    -> SECONDARY ATTACK DMG (RETURN - OBJ)
+  eg.: SMITE DAMAGE: 50-80
+
+    -> APLIFY DMG (CHECKBOX - BOOLEAN)
+
+
+absolute final dmg = base + off-weap% (regular values plus demons dmg% or undead dmg%) + elem-dmg
+***dmg to demons or undead are OFF-WEAPON properties!--------^--------------^
+
+
+==> CTB
+    -> TOTAL CTB (RETURN - NUMBER)
+  eg.: TOTAL CTB: 54%
+    "YOU ARE 32 (RETURN - NUMBER) DEXTERITY POINTS AWAY TO ACHIEVE MAX 75% CTB"
+
+    *** CTB FORMULA: T = B * (D - 15) / (2 * C)
+        T = TOTAL CHANCE
+        B = TOTAL BLOCKING BONUS (CHAR INIT VALUES + SHIELD CTB + ICB FROM ITEMS + HS SKILL)
+        D = DEX
+        C = CHAR LVL
+
+        BLOCKING BONUS BY CLASS
+        - Paladin: +30 (%)
+        - Amazon, Assassin, Barbarian: +25 (%)
+        - Druid, Necromancer, Sorceress: +20 (%)
+        
+        ex: paladin lvl 99, alma negra (20), guardian angel (20), 70 dex, no HS
+        ex: T = (30 + 28 + 20 + 20 + 0) * (70 - 15) / 2 * 99
+            T = 98 * 55 / 198 = 21.66% >> math.round >> 27%
+        
+        HOW MUCH DEX DO I NEED FORMULA: (75 * 2 * C + (B * 15))/B
+
+        * MAX BLOCK CALC WEBSITE http://www.baronsbazaar.ca/forum/ppr/block_calc.html
+
+==> IAS + FPA + APS
+    -> FPA (RETURN - NUMBER)
+    -> APS (RETURN - NUMBER)
+    -> TABLE BREAKPOINTS
+                             FPA  APS
+  eg.: +13% IAS TO ACHIEVE...9    2.77
+  eg.: +34% IAS TO ACHIEVE...8    3.12
+  eg.: +72% IAS TO ACHIEVE...7    3.57
+    "FURTHER IAS POINTS WILL BE DISCARTED"
+
+    *** IAS WEBSITE https://mmmpld.github.io/pod-attack-calc/
+
+
+WEAPON CLASS MODIFIER TABLE
+                                Act 1 Rogue Act 2 Guard Act 5 Barbarian Amazon Assassin
+normal attack                                                             11      10
+Dagger                                                                    12      14
+1HS                                                           16          13      14
+2h-Sword                                                      16          17      22
+2h-Axe, Staff, Polearm                            8                       17      18
+2h-Mace (Maul, wsm 10)                                                    20      21
+Claw                                                                              13.5
+Javelin, Spear                                    8                       15      22
+Bow                                  15                                   13      15
+Crossbow                                                                  19      20
+
+
+                                Barbarian Druid (in wereform) Necromancer Paladin Sorceress
+normal attack                      11       15                    14        13       14
+Dagger                             15       18         22         18        16       16
+1HS                                13       20         22         18        14       17
+2h-Sword                           17       21         25         22        17.5     21
+2h-Axe, Staff, Polearm             18       17         20         19        17       15
+2h-Mace (Maul, wsm 10)             21       20         23         22        20       17
+Orb                                                                                  17
+Javelin, Spear                     18       23         27         23        19       20
+Bow                                14       15         19         17        15       16
+Crossbow                           19       19         24         19        19       19
+
+
+                                                              MAX: 175
+                                                      /----------^----------\
+AnimDuration = ceil{(AnimLength * 256) / floor[256 * (100 + SIAS + EIAS - WSM) / 100]} -1
+EIAS = floor[(120 * IASItem) / (120 + IASItem)]
+
+AnimLength = BaseFrame + 1
+
+example: {
+  Class: Paly, 
+  WSM: -30 (1HS),
+  IAS: 24,
+  SIAS: 0,
+  AnimLength: 14 + 1 (1HS)
+}
+
+EIAS = (120 * 24) / (120 + 24) = 20
+AnimDuration = {(15 * 256) / [256 * (100 + 0 + 20 - (-30)) / 100]} -1
+               {3840 / 384} - 1 = 9
+
+BaseFrames: {
+  paladin: {
+    attack: {
+      '1hs': [
+        [18, 0, 0, 0, 0, 0, 0],
+        [17, 5, 0, 0, 0, 0, 0],
+        [16, 10, 0, 0, 0, 0, 0],
+        [15, 16, 5, 0, 0, 0, 0],
+        [14, 24, 11, 0, 0, 0, 0],
+        [13, 37, 22, 9, 0, 0, 0],
+        [12, 52, 34, 19, 7, 0, 0],
+        [11, 72, 50, 32, 18, 6, 0],
+        [10, 109, 78, 54, 35, 20, 8],
+        [9, 168, 120, 86, 60, 40, 24],
+        [8, 317, 215, 152, 109, 78, 54]
+      ]
+    },
+    zeal: {
+      '1hs': [
+        ['9/9/9/9/18 (54)', 0, 0, 0, 0, 0, 0],
+        ['9/9/9/9/17 (53)', 5, 0, 0, 0, 0, 0],
+        //['8/8/8/8/17 (49)', 9, 0, 0, 0, 0, 0],
+        ['8/8/8/8/16 (48)', 10, 0, 0, 0, 0, 0],
+        ['8/8/8/8/15 (47)', 16, 5, 0, 0, 0, 0],
+        ['7/7/7/7/14 (42)', 24, 11, 0, 0, 0, 0],
+        ['7/7/7/7/13 (41)', 37, 22, 9, 0, 0, 0],
+      ]
+    }
+  }
+}
+
+
+
+==> CTH FORM
+    -> MONSTER (SEL - OBJ)
+  eg.: BAAL: 76%
+  eg.: DIABLO: 85%
+  eg.: FALEN: 95%
+
+==> ATTACK RATING
+  -> FORMULA
+    - MATH.FLOOR(((TOTAL HARD POINTS IN DEXTERITY * 5) + BASE CLASS AR) * %BONUS AR / 100)
+    - EX.:
+      HP IN DEX: 10,
+      BASE CLASS AR: 85 (PALY)
+      BONUS AR: 50%
+      ((10 * 5) + 85) * (50/100 + 1) = 202 [202.5]
+
+
+
+
+
+
+===========================================================================================================
+
+MODS AND PROPS FOR SMITE/SHIELD DAMAGE
+
+Hopefully this will end some of the threads that seem to ask the same thing :-/
+This was written by Oramin and Bloodshrike on b-net's forums. I added a few examples where I thought needed
+
+
+The following things work with Smite:
+
+Bonus damage from STR (each point of STR adds 1% ED) (new for 1.10)
++Skills (increase damage a LOT)
+Crushing Blow (including CB on the weapon; e.g. Black runeword)
+Weapon range (see below)
+Weapon speed (see below)
+Life Tap (charges can be found on wands and daggers, save this for tough spots)
+Freezes Target (including from the weapon; e.g. Sureshrill Frost)
+Hit Blinds Target (From all gear, including the weapon and the shield)
+Slow (including from the weapon; e.g. Pompeiis Wrath)
+% Chance to cast (including from the weapon)
+Prevent Monster Heal
+Open Wounds (new for 1.10)
+
+
+The following things work with Smite but do *not* display on the Character screen:
+
+Enhanced Damage which is off-weapon (thanks to Grimble for bringing this to my attention; thanks to Mikeandroe for helping test) (new for 1.10)
+
+The following items increase the shield damage: Redeemer, Astreons Iron Ward, Stone Crusher, Grief runeword (Redeemer confirmed by Stopherson) (new for 1.10)
+
+Damage +X, which is the attribute that the above items have, is added directly to the shield damage just like the Holy Shield bonus. This means that any %ED bonuses which work with Smite will apply (e.g. Fanaticism). (Thanks to Mikeandroe for helping test).
+
+
+The following things DO NOT WORK with Smite:
+Leech (life/mana)
+Deadly Strike/Critical Strike (confirmed by both Oramin and Vash-dm independently in 1.11)
+Knockback (apart from the standard Knockback on the skill)
+Elemental damage from equipment or charms
+Elemental damage from auras (e.g. Holy Shock) (the area effect will still work, just not the applied damage)
+Magic damage from Sanctuary (note that I havent verified this for 1.10+ but I dont see any reason it should have changed; the area effect will still work, just not the applied damage) (added on behalf of gibbousmoon)
+Gear and charms that add a set amount of damage (verified by SSJPunk) except for those items which have the Damage +X attribute (e.g. WarTravs will *not* add damage to Smite; neither will 3/20/20 scs)
+Enhanced Damage on the weapon
+Enhanced Damage to Demons (e.g. Laying of Hands) (Thanks to Bonkshasa and Posterboy for testing)
+Enhanced Damage to Undead has *not* been tested, but it should behave the same way as Enhanced Damage to Demons
+
+
+Smite speed is dependent on:
+
+Base weapon speed (odd but true)
+% EIAS from Fanaticism
+IAS in gear
+6 frame Smite is the fastest possible
+
+How is Smite Damage Calculated? Version 1.11
+
+It behaves like a standard weapon (except the %ED on the shield isn't equivalent to %ED on a weapon).
+
+Take the shield's base damage.
+Add anything that increases the shield damage.
+Multiply by non-weapon sources of %ED.
+
+For example:
+
+(Shield Base + Holy Shield bonus + Grief bonus) * (1 + Smite %ED bonus + STR %ED bonus + Fanaticism %ED bonus + off-weapon %ED bonus) = Total damage
+
+The reason for this section is that the LCS (Lying Character Screen) isnt necessarily accurate. If you want to know the damage that you are actually doing you should run the numbers yourself.
+    
